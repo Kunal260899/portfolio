@@ -38,7 +38,7 @@ requestAnimationFrame(raf);
 
 //--- IMAGE SCROOL EFFECT ---
   const frameCount = 75;
-  const currentFrame = index => `img/${index}.webp`;
+  const currentFrame = index => `./img/${index}.webp`;
   const canvas = document.getElementById("sequence");
   const context = canvas.getContext("2d");
   const images = [];
@@ -518,4 +518,5 @@ splitTypes.forEach((char, i) => {
         }
       }
     );
+
 
