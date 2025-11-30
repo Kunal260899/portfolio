@@ -81,8 +81,8 @@ The portfolio is fully responsive with breakpoints for:
 📍 Mumbai, India  
 💼 Azure Cloud Engineer
 
-- LinkedIn: [your-profile](https://www.linkedin.com/in/kunal-sondkar26/)
-- GitHub: [your-username](https://github.com/Kunal260899)
+- LinkedIn: [Kunal Sondkar](https://www.linkedin.com/in/kunal-sondkar26/)
+- GitHub: [Kunal Sondkar](https://github.com/Kunal260899)
 
 ---
 
