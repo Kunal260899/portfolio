@@ -178,7 +178,6 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden;
-      background: black;
     }
 
     .intro-overlay {
@@ -238,7 +237,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: black;
       opacity: 0;
       pointer-events: none;
       z-index: 100;
@@ -316,7 +314,8 @@
     .potrait {
       grid-area: potrait;
       height: 100%;
-      background: linear-gradient(to right, rgb(0, 0, 0), transparent), url('IMGG_0170.png') center/cover no-repeat;
+      /* background: linear-gradient(to right, rgb(0, 0, 0), transparent), url('IMGG_0170.png') center/cover no-repeat; */
+      background: var(--bg-dark);
     }
 
     .grid-skills{
