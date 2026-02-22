@@ -140,6 +140,10 @@
       --navbar: rgba(245, 247, 250, 0.9);
     }
 
+    html{
+      color-scheme: dark light;
+    }
+
     html, body {
       margin: 0;
       padding: 0;

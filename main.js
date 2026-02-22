@@ -9,6 +9,15 @@ function toggleMode() {
   });
 }
 
+  const prefersLight = window.matchMedia("(prefers-color-scheme: light)");
+
+  function applySystemTheme() {
+    document.body.classList.toggle("light", prefersLight.matches);
+  }
+
+  applySystemTheme();
+  prefersLight.addEventListener("change", applySystemTheme);
+
 // Initialize Lenis
 const lenis = new Lenis();
 
@@ -38,7 +47,7 @@ requestAnimationFrame(raf);
 
 //--- IMAGE SCROOL EFFECT ---
   const frameCount = 75;
-  const currentFrame = index => `./img/${index}.webp`;
+  const currentFrame = index => `/img/${index}.webp`;
   const canvas = document.getElementById("sequence");
   const context = canvas.getContext("2d");
   const images = [];
@@ -518,5 +527,3 @@ splitTypes.forEach((char, i) => {
         }
       }
     );
-
-
