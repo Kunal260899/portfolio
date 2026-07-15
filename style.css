@@ -894,7 +894,7 @@
     .education{
       background-color: var(--education-section);
       display: flex;
-      height: 100vh;
+      height: 115vh;
       align-items: center;
       flex-wrap: wrap;
       flex-direction: column;
