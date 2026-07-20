@@ -300,10 +300,12 @@
     
     .main-section{
       width: 100vw;
+      min-height: 100vh;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 1fr;
       grid-template-areas: 
-      'information potrait';
+      'potrait information';
     }
 
     .information{
@@ -318,8 +320,9 @@
     .potrait {
       grid-area: potrait;
       height: 100%;
-      /* background: linear-gradient(to right, rgb(0, 0, 0), transparent), url('IMGG_0170.png') center/cover no-repeat; */
-      background: var(--bg-dark);
+      background: url('kunal_potrait_rightt.png') no-repeat center center;
+      background-size: contain;
+      /* background: var(--bg-dark); */
     }
 
     .grid-skills{
@@ -1096,19 +1099,24 @@
       }
       
       .main-section {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-          'potrait'
-          'information';
+        grid-template-columns: 100px 1fr; 
+        grid-template-areas: 'potrait information';
+        align-items: start;
+      }
+
+      .potrait {
+        min-height: 100px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center 20%;
+        margin-top: 2vh;
       }
 
       .information {
         padding: 2vh 4vw;
-      }
-
-      .potrait {
-        min-height: 40vh;
-      }  
+      } 
 
       .socials-container {
         gap: 15px;
