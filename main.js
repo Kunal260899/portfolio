@@ -241,7 +241,7 @@ function startDownload() {
   });
 
   setTimeout(async () => {
-    const pdfUrl = 'Resume.pdf';
+    const pdfUrl = 'KunalSondkar_Resume.pdf';
 
     const a = document.createElement("a");
     a.href = pdfUrl;
